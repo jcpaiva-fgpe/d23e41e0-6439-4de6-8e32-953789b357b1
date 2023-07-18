@@ -1,14 +1,12 @@
 def konwertuj_na_zwykly_ulamek(liczba):
-    def najwiekszy_wspolny_dzielnik(a, b):
-        while b:
-            a, b = b, a % b
-        return a
+    def najblizszy_mianownik(liczba):
+        for mianownik in range(1, 10):
+            zaokraglona = round(liczba * mianownik)
+            if abs(liczba - zaokraglona / mianownik) < 0.0001:
+                return mianownik
+        return 9
 
-    def skroc_ulamek(licznik, mianownik):
-        wspolny_dzielnik = najwiekszy_wspolny_dzielnik(licznik, mianownik)
-        return licznik // wspolny_dzielnik, mianownik // wspolny_dzielnik
-
-    mianownik = 9
+    mianownik = najblizszy_mianownik(liczba)
     licznik = int(round(liczba * mianownik))
 
     if licznik == 0:
@@ -16,7 +14,6 @@ def konwertuj_na_zwykly_ulamek(liczba):
     elif licznik == mianownik:
         return "9/9"
     else:
-        licznik, mianownik = skroc_ulamek(licznik, mianownik)
         return f"{licznik}/{mianownik}"
 
 print(konwertuj_na_zwykly_ulamek(float(input())))
