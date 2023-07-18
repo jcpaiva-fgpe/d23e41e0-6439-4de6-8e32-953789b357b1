@@ -1,0 +1,66 @@
+<b>Funkcja obliczająca punkty w grze w kości.</b>
+<br>
+<p>Na wejściu otrzymuje rzut w postaci pięciu liczb oznaczających liczbę oczek wyrzuconych na każdej kości.
+Na wyjściu zwraca słownik, w którym dla każdej punktowanej kategorii zwraca liczbę punktów uzyskanych w rzucie:
+- jedynki: suma wyrzuconych jedynek (lub 0 jeśli nie wyrzucono żadnej jedynki),
+- dwójki: suma wyrzuconych dwójek (lub 0 jeśli nie wyrzucono żadnej dwójki),
+- trójki: suma wyrzuconych trójek (lub 0 jeśli nie wyrzucono żadnej trójki),
+- czwórki: suma wyrzuconych czwórek (lub 0 jeśli nie wyrzucono żadnej czwórki),
+- piątki: suma wyrzuconych piątek (lub 0 jeśli nie wyrzucono żadnej piątki),
+- szóstki: suma wyrzuconych szóstek (lub 0 jeśli nie wyrzucono żadnej szóstki),
+- trzy jednakowe: suma oczek na wszystkich kościach jeśli wyrzucono trzy kości z taką samą liczbą oczek (lub 0 jeśli nie wyrzucono),
+- cztery jednakowe: suma oczek na wszystkich kościach jeśli wyrzucono cztery kości z taką samą liczbą oczek (lub 0 jeśli nie wyrzucono),
+- full: 25 punktów jeśli wyrzucono trzy kości z jednakową liczbą oczek i pozostałe dwie kości z jednakową liczbą oczek (lub 0 jeśli nie wyrzucono),
+- mały strit: 30 punktów jeśli wyrzucono cztery kości o liczbie oczek rosnącej o jeden (lub 0 jeśli nie wyrzucono),
+- duży strit: 40 punktów jeśli wyrzucono pięć kości o liczbie oczek rosnącej o jeden (lub 0 jeśli nie wyrzucono),
+- generał: 50 punktów jeśli wyrzucono pięć kości o takiej samej liczbie oczek (lub 0 jeśli nie wyrzucono),
+- szansa: suma oczek na wszystkich kościach.
+Przykłady przebiegu wykonania:<br></p>
+<pre>Wejście: 1, 3, 1, 5, 2.
+Wyjście: {
+jedynki: 2,
+dwójki: 2,
+trójki: 3,
+czwórki: 0,
+piątki: 5,
+szóstki: 0,
+trzy jednakowe: 0,
+cztery jednakowe: 0,
+full: 0,
+mały strit: 0,
+duży strit: 0,
+generał: 0,
+szansa: 12 }
+
+Wejście: 1, 3, 4, 5, 2.
+Wyjście: {
+jedynki: 1,
+dwójki: 2,
+trójki: 3,
+czwórki: 4,
+piątki: 5,
+szóstki: 0,
+trzy jednakowe: 0,
+cztery jednakowe: 0,
+full: 0,
+mały strit: 30,
+duży strit: 40,
+generał: 0,
+szansa: 15 }
+
+Wejście: 3, 3, 3, 3, 3.
+Wyjście: {
+jedynki: 0,
+dwójki: 0,
+trójki: 15,
+czwórki: 0,
+piątki: 0,
+szóstki: 0,
+trzy jednakowe: 15,
+cztery jednakowe: 15,
+full: 25,
+mały strit: 0,
+duży strit: 0,
+generał: 50,
+szansa: 15 }
+</pre>
