@@ -1,0 +1,7 @@
+Podaj napis:
+Halo (4)
+Podaj napis:
+Szczecin (6)
+Podaj napis:
+Szczecin (6)
+Koniec programu.
