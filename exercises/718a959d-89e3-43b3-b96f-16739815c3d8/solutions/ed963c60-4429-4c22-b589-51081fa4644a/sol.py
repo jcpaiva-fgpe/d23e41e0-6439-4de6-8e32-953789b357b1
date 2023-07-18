@@ -5,4 +5,4 @@ def ma_pierwiastek_kwadratowy(liczba):
     pierwiastek = int(liczba ** 0.5)
     return pierwiastek * pierwiastek == liczba
 
-print(ma_pierwiastek_kwadratowy(input()))
+print(ma_pierwiastek_kwadratowy(int(input())))
