@@ -1,4 +1,4 @@
-def uproszcz_napis(napis):
+def uprosc_napis(napis):
     polskie_znaki = "ĄĆĘŁŃÓŚŹŻąćęłńóśźż"
     uproszczenia = "ACELNOSZZacelnoszz"
 
@@ -11,3 +11,5 @@ def uproszcz_napis(napis):
             napis_uproszczony += znak
 
     return napis_uproszczony
+
+print(uprosc_napis(input()))
