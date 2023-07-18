@@ -4,4 +4,8 @@ def rozstep_listy(lista):
 
     return max(lista) - min(lista)
 
-print(rozstep_listy(input().split()))
+# Wywołując funkcję użyj zmiennej zadanie.
+zadanie = list(map(int, input().split()))
+
+
+print(rozstep_listy(zadanie))
