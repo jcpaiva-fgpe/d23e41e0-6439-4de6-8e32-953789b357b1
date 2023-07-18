@@ -1,0 +1,22 @@
+<b>Funkcja dzieląca wyraz na sylaby.</b><br>
+<p>Na wejściu otrzymuje napis zawierający pojedyncze słowo.
+Na wyjściu zwraca napis, w którym granice sylab oznaczono łącznikiem (-).
+Funkcja powinna działać dla polskiego alfabetu (tj. także dla liter: ĄĆĘŁŃÓŚŹŻąćęłńóśźż) i opierać się na poniższych regułach:</p>
+<p> 1) każda samogłoska tworzy sylabę</p>
+<p> 2) spółgłoska może należeć tylko do sylaby, w której jest samogłoska, chyba, że w całym wyrazie nie ma samogłosek</p>
+<p> 3) jeśli między dwoma samogłoskami jest kilka spółgłosek, dzielimy je o ile to możliwe, po równo między ich sylaby</p>
+<p> 4) jeśli między dwoma samogłoskami jest jedna spółgłoska, dodajemy ją do krótszej sylaby (a jeśli mają taką samą długość - do pierwszej)</p>
+<p> 5) nie dzielimy polskich dwuznaków (ch, cz, dz, dź, dż, rz, sz) - traktujemy je jako jedną głoskę (ignorujemy wyjątki w wymowie, takie jak "marznąć" czy "odzew")</p>
+<p> 6) "i" zmiękczające przed samogłoską nie tworzy sylaby, musi być dołączone wraz z poprzedzającą spółgłoską do kolejnej sylaby (ignorujemy wyjątki w wymowie, takie jak wyrazy obcojęzyczne "kia" czy "mio")</p>
+<p><br>Przykłady przebiegu wykonania:<br>
+<pre>Wejście: "abecadło"
+Wyjście: "abe-cad-ło"
+Wejście: "nieraz"
+Wyjście: "nie-raz"
+Wejście: "niedzisiejszy"
+Wyjście: "nie-dzi-siej-szy"
+Wejście: "woda"
+Wyjście: "wo-da"
+Wejście: "rzeczka"
+Wyjście: "rze-czka"
+</pre>
