@@ -16,3 +16,5 @@ def zakoduj_powtorzenia(napis):
     zakodowany_napis += napis[-1]
 
     return zakodowany_napis
+
+print(zakoduj_powtorzenia(input()))
