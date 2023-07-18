@@ -1,0 +1,3 @@
+Podaj listę 1:
+Podaj listę 2:
+AC AD BC BD CC CD
