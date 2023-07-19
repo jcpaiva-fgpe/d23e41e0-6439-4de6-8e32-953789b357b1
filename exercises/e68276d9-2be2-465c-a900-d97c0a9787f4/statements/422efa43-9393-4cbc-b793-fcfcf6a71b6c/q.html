@@ -1,0 +1,20 @@
+<b>Funkcja generująca tabele.</b><br>
+<p>Na wejściu otrzymuje listę, której każdy element jest listą (wierszem tabeli), której każdy element jest napisem lub liczbą (wartością jednego pola tabeli).
+Pierwszy wiersz jest nagłówkiem tabeli (oddzielamy go krawędzią od kolejnych wierszy). Liczba kolumn tabeli odpowiada liczbie elementów pierwszego wiersza. Gdyby któryś z późniejszych wierszy miał więcej elementów, ignorujemy nadmiarowe; gdyby miał mniej - wypełniamy pozostałe kolumny tego wiersza wartościami pustymi.
+Na wyjściu zwraca napis zawierający tabelę narysowaną z uzyciem znaków: +-| oraz znaku końca wiersza. Szerokość kolumny ma pomieścić najdłuższy napis z dowolnego jej wiersza wraz ze spacjami oddzielającymi go od krawędzi tabeli. Napisy w polach tabeli wyrównujemy do lewej, a liczby do prawej.
+Przykład przebiegu wykonania:<br></p>
+<pre>Wejście: [ ["Rok", "Mistrz"], [1986, "Argentyna"], [1990, "Niemcy"], [1994, "Brazylia"], [1998, "Francja"], 
+[2002, "Brazylia"], [2006, "Włochy"], [2010, "Hiszpania"] ]
+Wyjście: 
++-----+------------+
+| Rok  | Mistrz    |
++------+-----------+
+| 1986 | Argentyna |
+| 1990 | Niemcy    |
+| 1994 | Brazylia  |
+| 1998 | Francja   |
+| 2002 | Brazylia  |
+| 2006 | Włochy    |
+| 2010 | Hiszpania |
++------+-----------+
+</pre>
