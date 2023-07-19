@@ -17,4 +17,5 @@ def punkty_w_kosci(rzut):
     }
     return rzut_dict
 
-    
+
+print(*list(map(punkty_w_kosci, [[1, 3, 1, 5, 2], [1, 3, 4, 5, 2], [3, 3, 3, 3, 3]])))
