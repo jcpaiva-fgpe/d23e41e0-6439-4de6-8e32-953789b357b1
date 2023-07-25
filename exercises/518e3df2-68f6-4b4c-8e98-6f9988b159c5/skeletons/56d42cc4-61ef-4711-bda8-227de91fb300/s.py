@@ -1,3 +1,5 @@
+
+
 # Wywołując funkcję punkty_w_kosci, wartości są pobierane z listy.
 # Nie zmieniaj danych!
 
