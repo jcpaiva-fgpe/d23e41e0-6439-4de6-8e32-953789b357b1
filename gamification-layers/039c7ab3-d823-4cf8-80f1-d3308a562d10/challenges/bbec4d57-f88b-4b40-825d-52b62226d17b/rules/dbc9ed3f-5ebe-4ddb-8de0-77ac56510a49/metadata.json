@@ -1,0 +1,1 @@
+{"id":"dbc9ed3f-5ebe-4ddb-8de0-77ac56510a49","name":"un2","triggers":[{"kind":"ACTION","event":"CHALLENGE_COMPLETED","recurrent":false,"parameters":["bbec4d57-f88b-4b40-825d-52b62226d17b"]}],"criteria":{},"actions":[{"type":"UPDATE","parameters":["CHALLENGE","a28203fa-55e7-451b-ba73-09895a0ce7b6","state","OPENED"]}]}
