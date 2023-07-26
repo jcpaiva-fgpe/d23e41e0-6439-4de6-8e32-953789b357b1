@@ -11,7 +11,8 @@ while True:
     liczba_prob += 1
     propozycja = (dolna_granica + gorna_granica) // 2
 
-    odpowiedz = input(f"Czy to {propozycja}?\n")
+    print(f"Czy to {propozycja}"')
+    odpowiedz = input()
 
     if odpowiedz == "-":
         gorna_granica = propozycja - 1
