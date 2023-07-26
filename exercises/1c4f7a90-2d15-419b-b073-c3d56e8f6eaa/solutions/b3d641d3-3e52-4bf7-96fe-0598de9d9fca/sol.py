@@ -1,7 +1,8 @@
 n = {}
 
 while True:
-    s = input("Podaj napis:\n")
+    print("Podaj napis:")
+    s = input()
 
     if not s:
         break
@@ -11,8 +12,8 @@ while True:
 
     max_s = max(n, key=n.get)
     max_l = n[max_s]
-
-    print(f"{max_s} ({max_l})")
+    
+    print(str(max_s) +' ('+ str(max_l)+")")
 
 
 print("Koniec programu.")
