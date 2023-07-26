@@ -1,4 +1,4 @@
-Pomyśl liczbę od 1 do 99 i wciśnij enter.
+Pomyśl liczbę 1-99 i wciśnij enter.
 Czy to 50?
 Czy to 75?
 Czy to 62?
