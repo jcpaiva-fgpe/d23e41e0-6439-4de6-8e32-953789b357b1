@@ -1,1 +1,1 @@
-print("Pomyśl liczbę od 1 do 99 i wciśnij enter.")
+print("Pomyśl liczbę 1-99 i wciśnij enter.")
