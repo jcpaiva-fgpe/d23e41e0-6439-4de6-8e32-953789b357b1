@@ -1,0 +1,1 @@
+{"id":"e23e68e6-3ad3-48ea-9f11-8b40c15c66d5","name":"[Funkcja konwerujaca zapis liczb szestnastkowych] Give Key S1 Ulocker","triggers":[{"kind":"ACTION","event":"SUBMISSION_ACCEPTED","recurrent":false,"parameters":["dfd0fe60-29b6-421f-8dc7-7659fd787586"]}],"criteria":{},"actions":[{"type":"GIVE","parameters":["d007f0a8-a5ab-4259-a375-a65c416eb07f"]}]}
